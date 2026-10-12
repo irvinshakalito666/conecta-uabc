@@ -484,7 +484,149 @@
         align-items: flex-start;
       }
     }
-    .hero {
+    body {
+  background-color: #f1f0e8;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 4px,
+      rgba(0,0,0,0.018) 5px
+    );
+}
+
+/* Encabezado */
+header {
+  background: #f7f5ed;
+  border-bottom: 4px solid #111;
+  box-shadow: 0 5px 0 #c7ff16;
+}
+
+/* Navegacion */
+nav a {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #101ba3;
+  background: #c7ff16;
+  transform: rotate(-3deg);
+}
+
+/* Titulos */
+.titulo h2 {
+  color: #101ba3;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-shadow: 3px 3px 0 #c7ff16;
+}
+
+.titulo .mini {
+  color: #101ba3;
+  font-weight: 900;
+}
+
+/* Titular principal */
+.hero h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  text-shadow: 4px 4px 0 #101010;
+}
+
+.hero h1 span {
+  color: #c7ff16;
+}
+
+/* Etiqueta del inicio */
+.etiqueta {
+  background: #c7ff16;
+  color: #111;
+  border: 2px solid #111;
+  border-radius: 2px;
+  font-weight: 900;
+  transform: rotate(-2deg);
+}
+
+/* Tarjetas tipo sticker */
+.tarjeta {
+  background: #fffef7;
+  border: 3px solid #111;
+  border-radius: 5px;
+  box-shadow: 7px 7px 0 #111;
+  transition: 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translate(-3px, -5px) rotate(-1deg);
+  box-shadow: 10px 12px 0 #101ba3;
+}
+
+.tarjeta h3 {
+  color: #101ba3;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* Iconos */
+.icono {
+  background: #c7ff16;
+  border: 2px solid #111;
+  border-radius: 4px;
+  transform: rotate(-6deg);
+}
+
+/* Botones estilo skate */
+.boton {
+  background: #c7ff16;
+  color: #111;
+  border: 3px solid #111;
+  border-radius: 3px;
+  box-shadow: 5px 5px 0 #111;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: 0.2s;
+}
+
+.boton:hover {
+  background: #fff;
+  transform: translate(-2px, -3px);
+  box-shadow: 8px 8px 0 #111;
+}
+
+.boton-blanco {
+  background: white;
+  color: #111;
+}
+
+/* Secciones */
+.fondo-azul {
+  background: #e4e7ff;
+  border-top: 3px solid #111;
+  border-bottom: 3px solid #111;
+}
+
+/* Recursos */
+.recurso {
+  border: 3px solid #111;
+  border-radius: 3px;
+  box-shadow: 5px 5px 0 #101ba3;
+}
+
+/* Footer */
+footer {
+  background: #101010;
+  border-top: 6px solid #c7ff16;
+  color: #fff;
+}
+
+/* Celulares */
+@media (max-width: 900px) {
+  .hero {
     grid-template-columns: 1fr;
     min-height: auto;
     padding: 75px 7%;
