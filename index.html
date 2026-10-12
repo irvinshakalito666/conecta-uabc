@@ -9,13 +9,13 @@
 
   <style>
     :root {
-      --azul: #063b70;
-      --azul-claro: #eaf3ff;
-      --verde: #36b89a;
-      --fondo: #f6f9fc;
-      --texto: #253449;
-      --blanco: #ffffff;
-    }
+  --azul: #101ba3;
+  --azul-claro: #e9eaff;
+  --verde: #c7ff16;
+  --fondo: #f1f0e8;
+  --texto: #171717;
+  --blanco: #ffffff;
+}
 
     * {
       margin: 0;
@@ -75,16 +75,29 @@
       color: var(--verde);
     }
 
-    .hero {
-      padding: 85px 8%;
-      background: linear-gradient(125deg, #063b70, #126aa1);
-      color: white;
-      display: grid;
-      grid-template-columns: 1.3fr 1fr;
-      align-items: center;
-      gap: 45px;
-    }
+   .hero {
+  padding: 100px 8%;
+  min-height: 680px;
 
+  background:
+    linear-gradient(
+      90deg,
+      rgba(5, 12, 45, 0.95) 0%,
+      rgba(5, 12, 45, 0.85) 45%,
+      rgba(5, 12, 45, 0.25) 100%
+    ),
+    url("fondo.png");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  gap: 45px;
+}
     .etiqueta {
       display: inline-block;
       padding: 7px 14px;
@@ -471,6 +484,27 @@
         align-items: flex-start;
       }
     }
+    .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 75px 7%;
+    background-position: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .hero {
+    padding: 65px 6%;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .tarjeta {
+    box-shadow: 4px 4px 0 #111;
+  }
+}
   </style>
 </head>
 
